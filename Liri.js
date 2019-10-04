@@ -1,14 +1,26 @@
+// Dependency for dotenv npm package
 require("dotenv").config();
 
 var keys = require("./keys.js");
-
+// Dependency for node-spotify-api npm package
 var Spotify = require('node-spotify-api');
  
+// Dependency for inquirer npm package
+var inquirer = require("inquirer");
+
+// Constructor function for creating LIRI objects
+function Liri(concert,song,movie){
+this.concert;
+this.song;
+this.movie;
 
 
-var spotify = new Spotify({
-  id: 'c376e1ce7af04f86905c76a311e9d0ba' ,
-  secret : 'ae8590f02b994aec84dbc3134237d716' 
-});
- 
+this.bandsInTown = function (){
+    let artist = process.argv[2];
 
+let band = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
+}
+
+
+}
+bandsInTown();
