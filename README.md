@@ -2,28 +2,30 @@
 
 # OVERVIEW
 
- ## LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
+ #### LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
 
 
-# Instructions:
+## Instructions:
 
-### This terminal is user friendly. As you navigate the terminal will ask you questions on whether you would like to grab info, 
-### either from a movie or a song and be able to get a concert through it to.
+#### This terminal is user friendly. As you navigate the terminal will ask you questions on whether you would like to grab info, 
+#### either from a movie or a song and be able to get a concert through it to.
 
 
-# Programs used:
+## Programs used:
 
-### Javascript, Nodejs 
- ## Node packages: 
- ### Node-Spotify-API, Request, Moment, DotEnv, inqurer
+#### Javascript, Nodejs 
+ ### Node packages: 
+ #### Node-Spotify-API, Request, Moment, DotEnv, inqurer
 
-# APIs USED:
+## APIs USED:
 
-### Bands in Town, OMDB, Git, GitHub
+#### Bands in Town, OMDB, Git, GitHub
 
-### This app was created by Xavier Davis
+#### This app was created by Xavier Davis
 
-##### This application will be is still under construction.
+###### This application will be is still under construction.
 
 #                                                                   MENU SCREEN
 
+![MENU SCREEN](/snapShots/MenuScreen.png)
+Format: ![Alt Text](url)
