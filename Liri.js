@@ -25,20 +25,27 @@ function Liri(concert, artist, song, movie) {
       artist +
       "/events?app_id=codingbootcamp";
   };
+
+ 
 }
 
 function mainMenu() {
   inquirer
     .prompt([
       {
+        type: "input",
+        message: "\nWhat is your name?",
+        name: "username"
+      },
+      {
         type: "list",
-        message: "Would you like to choose a Music or a Movie",
+        message: "\nWould you like to choose a Music or a Movie\n",
         choices: ["Music", "Movie"],
         name: "list"
       },
       {
         type: "confirm",
-        message: "Are you sure:",
+        message: "\nAre you sure:\n",
         name: "confirm",
         default: true
       }
@@ -46,15 +53,33 @@ function mainMenu() {
     .then(function(inquirerResponse) {
       // If the inquirerResponse confirms, we displays the inquirerResponse's username and pokemon from the answers.
       if (inquirerResponse.confirm === true) {
-        console.log("\nWelcome " + inquirerResponse.Music);
-        console.log(
-          "\nYour " + inquirerResponse.Music + " is ready for battle!\n"
-        );
+        console.log("\nWelcome " + inquirerResponse.username + "\n" +
+        "Please enter a artist or a movie you would like to hear\n ");
       }
       if (inquirerResponse.confirm === false) {
           console.log("\n")
         mainMenu();
       }
     });
+    
 }
+
+  function Bandinfo (){
+    this.movieInfo = function(){
+      let queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
+    }  
+    .then(function(inquirerResponse) {
+      // If the inquirerResponse confirms, we displays the inquirerResponse's username and pokemon from the answers.
+      if (inquirerResponse.confirm === true) {
+        console.log("\nWelcome " + inquirerResponse.username + "\n" +
+        "Please enter a artist or a movie you would like to hear\n ");
+      }
+      if (inquirerResponse.confirm === false) {
+          console.log("\n")
+        mainMenu();
+      }
+    });
+  }
+
 mainMenu();
+
