@@ -27,5 +27,4 @@
 
 #                                                                   MENU SCREEN
 
-![MENU SCREEN](/snapShots/MenuScreen.png)
-Format: ![Alt Text](url)
+# ![MENU SCREEN](/snapShots/MenuScreen.JPG)
